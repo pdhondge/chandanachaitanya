@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [12MarchSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="12MarchTest(failed)">
+    <classes>
+      <class name="chandanachaitanyaPackage.Checkbox">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="Beforemethod"/>
+          <include name="TC1_7"/>
+        </methods>
+      </class> <!-- chandanachaitanyaPackage.Checkbox -->
+    </classes>
+  </test> <!-- 12MarchTest(failed) -->
+</suite> <!-- Failed suite [12MarchSuite] -->
