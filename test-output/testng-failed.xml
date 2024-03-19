@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [12MarchSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="12MarchTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="chandanachaitanyaPackage.Checkbox">
+      <class name="chandanachaitanyaPackage.Textfield">
         <methods>
           <include name="aftermethod"/>
+          <include name="TC6_3"/>
+          <include name="TC6_2"/>
+          <include name="TC6_1"/>
           <include name="Beforemethod"/>
-          <include name="TC1_7"/>
         </methods>
-      </class> <!-- chandanachaitanyaPackage.Checkbox -->
+      </class> <!-- chandanachaitanyaPackage.Textfield -->
     </classes>
-  </test> <!-- 12MarchTest(failed) -->
-</suite> <!-- Failed suite [12MarchSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

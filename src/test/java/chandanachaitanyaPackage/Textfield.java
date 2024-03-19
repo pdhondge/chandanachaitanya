@@ -10,7 +10,9 @@ public class Textfield extends Xpaths{
 		
 		driver.findElement(By.xpath(Message)).sendKeys("Prathamesh");
 		Thread.sleep(1000);
+		
 	}
+	
 	
 	@Test(enabled=true, priority=2, groups="Textfield")
 	public void TC6_2() throws InterruptedException {
@@ -19,6 +21,8 @@ public class Textfield extends Xpaths{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath(Message)).clear();
 	}
+	
+	
 	
 	@Test(enabled=true, priority=3, groups="Textfield")
 	public void TC6_3() throws InterruptedException {

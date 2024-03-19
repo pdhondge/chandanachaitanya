@@ -16,7 +16,7 @@ public class Checkbox extends Xpaths {
 	public void TC1_1() throws InterruptedException {
 		
 		driver.findElement(By.xpath(Bicycle)).click();
-		Assert.assertTrue(driver.findElement(By.xpath(Bicycle)).isSelected());
+		Assert.assertTrue(driver.findElement(By.xpath(Bicycle)).isSelected());	
 		
 	}
 	

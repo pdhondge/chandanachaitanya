@@ -2,26 +2,36 @@ package chandanachaitanyaPackage;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.text.Document;
+
 import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v119.domsnapshot.model.DocumentSnapshot;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
 
 public class Xpaths {
 
 	WebDriver driver;
 	
+	
 	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void Beforemethod() {
-	 driver=new ChromeDriver();
+		
+		
+		 driver=new ChromeDriver();
 		 driver.get(URL);
-		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 driver.manage().window().maximize();
 	}
 	
@@ -33,6 +43,8 @@ public class Xpaths {
 		File src = ss.getScreenshotAs(OutputType.FILE);
 		File dest = new File("/home/prathamesh/eclipse-workspace/chandanachaitanya/Screenshots/Testcasefailed.png");
 		FileUtils.copyFile(src, dest);
+		
+		
 		driver.close();
 	}
 	
@@ -40,9 +52,11 @@ public class Xpaths {
 	String	URL ="https://chandanachaitanya.github.io/selenium-practice-site/?languages=Java&enterText=";
  
 	
+	@findby
+	
 	
 	// checkbox xapths
-	
+
 	String Bicycle = "//input[@id='bicycle-checkbox']";
 	String Tricycle = "//input[@id='tricycle-checkbox']";
 	String Bike = "//input[@id='bike-checkbox']";
